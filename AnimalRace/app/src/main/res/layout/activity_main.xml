@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_panel"
+    tools:context="com.example.phong_pc.animalrace.MainActivity">
+
+    <CheckBox
+        android:id="@+id/cbNum1"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbNum2"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbNum1" />
+
+    <CheckBox
+        android:id="@+id/cbNum3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbNum2"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <SeekBar
+        android:id="@+id/sbAnimal1"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dog_1"
+        android:thumb="@drawable/dog_1"
+        app:layout_constraintStart_toEndOf="@+id/cbNum1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sbAnimal2"
+        android:layout_width="57dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:thumb="@drawable/dog_2"
+        app:layout_constraintStart_toEndOf="@+id/cbNum2"
+        app:layout_constraintTop_toBottomOf="@+id/sbAnimal1" />
+
+    <SeekBar
+        android:id="@+id/sbAnimal3"
+        android:layout_width="59dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:thumb="@drawable/dog_3"
+        app:layout_constraintStart_toEndOf="@+id/cbNum3"
+        app:layout_constraintTop_toBottomOf="@+id/sbAnimal2" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+</android.support.constraint.ConstraintLayout>

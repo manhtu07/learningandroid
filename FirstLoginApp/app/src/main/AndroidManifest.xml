@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <!-- <activity android:name=".MainActivity" android:theme="@style/AppTheme.Dark"></activity> -->
-        <activity android:name=".LoginActivity" android:theme="@style/AppTheme.Purple"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.Purple" />
+        <activity android:name=".SignUpActivity" android:theme="@style/AppTheme.Purple" />
     </application>
 
 </manifest>

@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/fpt_logo" android:contentDescription="TODO"/>
 
     <EditText
-        android:id="@+id/edUsername"
+        android:id="@+id/edUsernameR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imvLogo" />
 
     <EditText
-        android:id="@+id/edEmail"
+        android:id="@+id/edEmailR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -49,10 +49,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/edUsernameR" />
 
     <EditText
-        android:id="@+id/edPassword"
+        android:id="@+id/edPasswordR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -65,10 +65,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/edEmailR" />
 
     <EditText
-        android:id="@+id/edBirthday"
+        android:id="@+id/edBirthdayR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -81,10 +81,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordR" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnSignUpR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -96,7 +96,7 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edBirthday" />
+        app:layout_constraintTop_toBottomOf="@+id/edBirthdayR" />
 
     <TextView
         android:id="@+id/textView"
@@ -108,7 +108,7 @@
         android:text="Do you have an account?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUpR"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -125,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUpR"
         app:layout_constraintVertical_bias="0.0" />
 
 

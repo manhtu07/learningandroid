@@ -22,7 +22,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        edBirthDay = (EditText) findViewById(R.id.edBirthday);
+        edBirthDay = (EditText) findViewById(R.id.edBirthdayR);
 
         edBirthDay.setOnClickListener(new View.OnClickListener() {
             @Override

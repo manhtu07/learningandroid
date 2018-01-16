@@ -35,6 +35,23 @@
         app:layout_constraintTop_toBottomOf="@+id/imvLogo" />
 
     <EditText
+        android:id="@+id/edFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_mail_white_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Full name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUsernameR" />
+
+    <EditText
         android:id="@+id/edEmailR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -49,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edUsernameR" />
+        app:layout_constraintTop_toBottomOf="@+id/edFullName" />
 
     <EditText
         android:id="@+id/edPasswordR"
@@ -68,6 +85,22 @@
         app:layout_constraintTop_toBottomOf="@+id/edEmailR" />
 
     <EditText
+        android:id="@+id/edPasswordR2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordR" />
+
+    <EditText
         android:id="@+id/edBirthdayR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -81,7 +114,7 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edPasswordR" />
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordR2" />
 
     <Button
         android:id="@+id/btnSignUpR"

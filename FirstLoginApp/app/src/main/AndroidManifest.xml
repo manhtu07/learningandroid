@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.phong_pc.firstloginapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,7 +22,10 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.Purple" />
-        <activity android:name=".SignUpActivity" android:theme="@style/AppTheme.Purple" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme.Purple" />
+        <activity android:name=".HomeScreenActivity"></activity>
     </application>
 
 </manifest>

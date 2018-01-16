@@ -19,15 +19,10 @@ public class LoginActivity extends AppCompatActivity {
     EditText edUsername,edPassword;
     private ProgressDialog pDialog;
     private String TAG = LoginActivity.class.getSimpleName();
-    private static String url = "http://172.27.9.23/api/User/";
     private boolean isSuccess=false;
 
 
-    public void doChangeUi()
-    {
-        final Intent intent = new Intent(this, SignUpActivity.class);
-        startActivity(intent);
-    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,15 +79,20 @@ public class LoginActivity extends AppCompatActivity {
             String jsonStr = "";
             try {
 
-                jsonStr=sh.makeServiceGet(url+edUsername.getText().toString());
+                jsonStr=sh.makeServiceGet(TextConst.URL+edUsername.getText().toString());
 
                 if (jsonStr != null) {
                     JSONObject jsonObj = new JSONObject(jsonStr);
 
                     String password = (String) jsonObj.get("Password");
                     String userPass=edPassword.getText().toString();
-
-                    if(password.equalsIgnoreCase(userPass)){
+                    String hashPass= null;
+                    try {
+                        hashPass = AESCrypt.encrypt(userPass);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if(password.equalsIgnoreCase(hashPass)){
                         isSuccess=true;
                     }
 
@@ -115,7 +115,7 @@ public class LoginActivity extends AppCompatActivity {
                         "Login success",
                         Toast.LENGTH_LONG)
                         .show();
-                context.startActivity(new Intent(context, MainActivity.class));
+                context.startActivity(new Intent(context, HomeScreenActivity.class));
 
             }
         }

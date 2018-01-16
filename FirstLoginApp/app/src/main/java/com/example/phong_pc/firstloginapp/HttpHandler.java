@@ -53,7 +53,8 @@ public class HttpHandler {
         try {
             // Send post request
             String method="POST";
-            if(actionName==""){
+
+            if(!actionName.equalsIgnoreCase("")){
                 method="PUT";
                 url+=actionName;
             }

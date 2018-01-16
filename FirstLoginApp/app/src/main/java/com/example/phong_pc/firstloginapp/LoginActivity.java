@@ -1,5 +1,4 @@
 package com.example.phong_pc.firstloginapp;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     private static String url = "http://172.27.9.23/api/User/";
     private boolean isSuccess=false;
 
+
     public void doChangeUi()
     {
         final Intent intent = new Intent(this, SignUpActivity.class);
@@ -32,6 +32,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        initialize();
+
 
         btnSignUp = (Button) findViewById(R.id.btnSignUp);
         btnLogin = (Button) findViewById(R.id.btnLogin);
@@ -118,4 +120,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     }
+
+    private void initialize(){
+        btnSignUp = (Button) findViewById(R.id.btnSignUp);
+        btnLogin= (Button) findViewById(R.id.btnLogin);
+        edUsername = (EditText) findViewById(R.id.edUsername);
+        edPassword = (EditText) findViewById(R.id.edPassword);
+    }
+
+
 }
